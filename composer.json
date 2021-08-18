@@ -1,0 +1,8 @@
+{
+    "name": "wordpress-plugin/sitepress-multilingual-cms",
+    "description": "sitepress-multilingual-cms",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.4"
+    }
+}
