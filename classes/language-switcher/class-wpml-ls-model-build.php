@@ -189,7 +189,7 @@ class WPML_LS_Model_Build extends WPML_SP_User {
 				if ( $slot->get( 'display_flags' ) ) {
 					$ret[ $code ]['flag_url']   = $this->filter_flag_url( $data['country_flag_url'], $template_data );
 					$ret[ $code ]['flag_title'] = $data['native_name'];
-					$ret[ $code ]['flag_alt']   = ( $display_name || $display_native ) ? '' : $data['translated_name'];
+					$ret[ $code ]['flag_alt'] = ( $display_name || $display_native ) ? $data['native_name'] : $data['translated_name'];
 				}
 
 				if ( $display_native ) {
